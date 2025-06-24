@@ -67,10 +67,7 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-
-        </plugins>
-        
-  <!-- ✅ Add JaCoCo plugin below -->
+            <!-- ✅ Add JaCoCo plugin below -->
              <plugin>
                  <groupId>org.jacoco</groupId>
                  <artifactId>jacoco-maven-plugin</artifactId>
@@ -89,8 +86,9 @@
                          </goals>
                      </execution>
                  </executions>
-             </plugin>
-         </plugins>
+             </plugin>   
+
+        </plugins>
      
     </build>
 
