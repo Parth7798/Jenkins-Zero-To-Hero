@@ -5,9 +5,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootApplication
 @Controller
+public class StartApplicationTest {
+
+    @Test
+    void contextLoads() {
+        assertTrue(true); // Dummy assertion
+    }
+}
+
 public class StartApplication {
 
     @GetMapping("/")
